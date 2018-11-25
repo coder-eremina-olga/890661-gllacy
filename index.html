@@ -10,17 +10,53 @@
     <header class="main-header">
         <nav class="main-navigator">
             <div>
-                <img src="img/Logo.svg" width="154" height="64" alt="Логотип Глейси"></div>
-            <ul class="site-navigator">
-                <li><a href="сatalog.html">Каталог</a></li>
-                <li><a href="payment.html">Доставка и оплата</a></li>
-                <li><a href="gllacy.html">О Компании</a></li>
-            </ul>
-            <ul class="site-navigator">
-                <li><a href="#">Поиск</a></li>
-                <li><a href="#">Вход</a></li>
+                <img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
+            </div>
+            <section>
+                <ul class="main-menu-navigator">
+                    <li>
+                        <button class="button-catalog" type="button">Каталог</button>
+                        <ul class="catalog-menu">
+                            <li class="catalog-intem">Новинки</li>
+                            <li class="catalog-intem"><a href="#">Сливочное</a></li>
+                            <li class="catalog-intem"><a href="#">Щербеты</a></li>
+                            <li class="catalog-intem"><a href="#">Фруктовый лед</a></li>
+                            <li class="catalog-intem"><a href="#">Мелорин</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="payment.html">Доставка и оплата</a></li>
+                    <li><a href="gllacy.html">О Компании</a></li>
+                </ul>
+            </section>
+            <section>
+                <button type="button">Поиск</button>
+                <h3 class="visually-hidden">Поиск</h3>
+                <form class="navigator-search" action="https://echo.htmlacademy.ru" method="POST">
+                    <p>
+                        <lebel for="search">Поиск</lebel>
+                        <input type="text" id="search" name="search" placeholder="Что ищем?">
+                    </p>
+                </form>
+                <!--вход-->
+                <button type="button">Вход</button>
+                <h3 class="visually-hidden">Форма входа</h3>
+                <form class="navigator-entrance" action="https://echo.htmlacademy.ru" method="POST">
+                    <p><label for="email-entrance">Ваш e-mail</label>
+                        <input type="text" id="email-entrance" name="name" placeholder="e-mail"></p>
+                    <p><label for="navigator-password">Пароль</label>
+                        <input type="text" id="navigator-password" name="password" placeholder="Пароль"></p>
+                    <p>
+                        <a class="navigator-password-recovery" href="#">Забыли пароль?</a>
+                    </p>
+                    <p>
+                        <a class="navigator-registration" href="#">Новая регистрация</a>
+                    </p>
+                    <button type="submit">Войти</button>
+                </form>
+
                 <li><a href="#">Пусто</a></li>
-            </ul>
+            </section>
             <div class="header-contact">
                 <p class="header-time"> c 10 до 20, ежедневно</p>
                 <p class="header-number"> 8 812 450-25-25</p>
@@ -54,10 +90,10 @@
         </ul>-->
         <div class="banners">
             <!--тут должна быть кнопка-->
-            <button> Давайте оба!</button>
+            <a href="#">Давайте оба!</a>
         </div>
 
-        <section class="berries">
+        <section class="sale-berries">
             <h2 class="visually-hidden">Акции</h2>
             <p class="berries-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
                 варенья бесплатно.</p>
@@ -65,7 +101,7 @@
                 <a href="#">Хочу варенья!</a>
             </div>
         </section>
-        <section class="chocolate">
+        <section class="sale-chocolate">
             <p class="berries-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
                 присыпки совершенно бесплатно.</p>
             <div class="button-chocolate">
@@ -135,7 +171,6 @@
                         <b>415 ք/кг</b>
                     </p>
                 </li>
-
             </ul>
         </section>
         <section>
@@ -186,39 +221,62 @@
             <h2 class="visually-hidden">Подписка на рассылку</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
                 происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-            <button>Отправить</button>
+            <button type="submit">Отправить</button>
         </section>
         <section class="contact-map">
             <h2>Контактная информация</h2>
-            <div>
+            <section class="contact-info">
                 <p class="contact-text">Адрес главного офиса и офлайн-магазина:<br></p>
                 <p class="adress-text">ул.Б.Конюшенная,19/8, Санкт-Петербург </p>
                 <p class="contact-text">для заказов по телефону</p><br>
                 <a href="tel:+78126668266" class="tel">+7(812) 666-82-66</a><br>
                 <p class="contact-text">(с 10 до 20 ежедневно)</p>
-                <!--форма обратной связи-->
+            </section>
+            <section>
                 <button>Форма обратной связи</button>
-            </div>
+                <h2>Мы обязательно вам ответим!</h2>
+                <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">Закрыть</button>
+                <form class="Feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+                    <p class="Feedback-form-name">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" name="name" id="name" placeholder="Как вас зовут?"></p>
+                    <p class="Feedback-form-email">
+                        <label for="email">Ваш e-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?"></p>
+                    <p class="Feedback-form-textarea">
+                        <label for="note">Форма заметки</label>
+                        <textarea class="Feedback-form-textarea" id="note" name="note" rows="9" placeholder="Напишите что-нибудь..."></textarea>
+                    </p>
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+
             <!--здесь будет карта-->
 
         </section>
     </main>
     <footer class="main-footer">
         <div class="footer-social">
-            <ul>
-                <li><a class="social-button" href="#">Твиттер</a></li>
-                <li><a class="social-button" href="#">Инстаграмм</a></li>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-            </ul>
+            <h3 class="visually-hidden">Мы в социальных сетях</h3>
+            <p>
+                <ul>
+                    <li><a class="social-button" href="#">Твиттер</a></li>
+                    <li><a class="social-button" href="#">Инстаграмм</a></li>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                </ul>
+            </p>
         </div>
         <div class="footer-list">
-            <ul>
-                <li><a href="#">для поставщиков</a></li>
-                <li><a href="#">О производстве</a></li>
-                <li><a href="#">Наши документы</a></li>
-                <li><a href="#">Экологические стандарты</a></li>
-            </ul>
+            <h3 class="visually-hidden">Дополнительная информация о магазине</h3>
+            <p>
+                <ul>
+                    <li><a href="#">для поставщиков</a></li>
+                    <li><a href="#">О производстве</a></li>
+                    <li><a href="#">Наши документы</a></li>
+                    <li><a href="#">Экологические стандарты</a></li>
+                </ul>
+            </p>
         </div>
 
         <p class="footer-copyright">
