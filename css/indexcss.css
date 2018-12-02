@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #849d8f;
+}
+
+.menu-navigator a {
+  color: #ffffff;
+}
+
+.menu-list,
+.menu-list a {
+  list-style: none;
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.main-menu-navigator,
+.user-navigation {
+  list-style: none;
+}
+
+.navigator-contact {
+  color: #ffffff;
+  text-align: right;
+}
+
+.nav-search,
+.user-entrance,
+.basket {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.main-menu-navigator {
+  font-size: 14px;
+  line-height: 18px;
+}
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs a,
+.breadcrumbs {
+  color: #ffffff;
+  list-style: none;
+}
+
+.slade-ice-cream {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.main-slade {
+  list-style: none;
+}
+
+.main-slade a {
+  text-decoration: none;
+}
+
+.banners a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 44px;
+
+  border: 2px solid #ee5e3e;
+  background-color: #ee5e3e;
+}
+
+.menu-list {
+  border: 1px solid #ffffff;
+}
+
+.navigator-number {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.navigator-time {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.sale-berries {
+  background-image: url("img/raspberries.jpg");
+  background-repeat: no-repeat;
+}
+
+.discount {
+  color: #ffffff;
+  font-size: 35px;
+  text-align: 41px;
+}
+
+.sale-chocolate {
+  background-image: url("img/chocolate.jpg");
+  background-repeat: no-repeat;
+}
+
+.berries-text {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: 22px;
+}
+
+.sale-berries a,
+.sale-chocolate a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: none;
+
+  border-color: #ee5e3e;
+
+  background-color: #ee5e3e;
+}
+
+.catalog-product,
+.catalog-product a{
+  color: #ffffff;
+  list-style: none;
+}
+
+.catalog-item-price {
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.catalog-item-price span {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.main-info {
+  background-image: url("img/wafer.jpg");
+  background-color: #ede1c7;
+
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.manufacture {
+  list-style-image: url("img/ice-creamsmall.png");
+}
+
+.blog {
+  background-image: url("img/barries.jpg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog a {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.mailing {
+  background-color: #f8f7f4;
+  border: 5px dotted #92cdff;
+
+  color: #848483;
+}
+
+.contact-info {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+
+  color: #323232;
+}
+
+.footer-list a,
+.footer-list {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-copyright a {
+  color: #ffffff;
+
+}
