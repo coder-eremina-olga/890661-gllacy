@@ -2,12 +2,11 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-family: "Roboto","Arial", sans-serif;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
-  text-transform: uppercase;
 
   background-color: #849d8f;
 }
@@ -40,10 +39,12 @@ body {
   border: 2px solid #ffffff;
   color: #ffffff;
 }
+
 .main-menu-navigator {
   font-size: 14px;
   line-height: 18px;
 }
+
 .user-navigation {
   font-size: 14px;
   line-height: 16px;
@@ -54,6 +55,7 @@ body {
   color: #ffffff;
   list-style: none;
 }
+
 
 .slade-ice-cream {
   color: #ffffff;
@@ -70,14 +72,18 @@ body {
   text-decoration: none;
 }
 
-.banners a {
+.button-link a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 32px;
-  line-height: 44px;
 
-  border: 2px solid #ee5e3e;
+
+  border-bottom: 2px solid #ee5e3e;
   background-color: #ee5e3e;
+}
+
+.button-link a:hover,
+.button-link a:focus {
+  background-color: #f48468;
 }
 
 .menu-list {
@@ -122,10 +128,9 @@ body {
 .sale-chocolate a {
   color: #ffffff;
   text-decoration: none;
-  line-height: none;
+  list-style: none;
 
   border-color: #ee5e3e;
-
   background-color: #ee5e3e;
 }
 
@@ -135,6 +140,12 @@ body {
   list-style: none;
 }
 
+.catalog-category {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .catalog-item-price {
   color: #ffffff;
   font-size: 45px;
@@ -142,7 +153,7 @@ body {
 }
 
 .catalog-item-price span {
-  font-size: 30px;
+  font-size: 45px;
   line-height: 45px;
 }
 
@@ -151,8 +162,18 @@ body {
   background-color: #ede1c7;
 
   color: #323232;
+}
+.main-info-market {
+  color: #575550;
   font-size: 24px;
   line-height: 30px;
+}
+
+.info-list {
+  color: #575550;
+  font-size: 16px;
+  line-height: 22px;
+  list-style: none;
 }
 
 .manufacture {
@@ -163,13 +184,15 @@ body {
   background-image: url("img/barries.jpg");
   background-repeat: no-repeat;
   background-color: #ffffff;
+}
 
+.blog-news {
   color: #323232;
   font-size: 16px;
   line-height: 22px;
 }
 
-.blog a {
+.blog-category {
   color: #323232;
   font-size: 24px;
   line-height: 30px;
