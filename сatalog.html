@@ -12,12 +12,13 @@
 <body>
   <header class="main-header">
     <nav class="main-navigator">
-      <a class="main-logo" href="index.html">
+      <a class="main-header-logo" href="index.html">
         <img src="img/Logo.svg" width="154" height="64" alt="Логотип Глейси">
       </a>
       <div class="menu-navigator">
         <ul class="main-menu-navigator">
           <li><a href="сatalog.html">Каталог</a>
+            <!--
             <ul class="menu-list">
               <li><a href="#">Новинки</a>
               </li>
@@ -30,12 +31,14 @@
               <li><a href="#">Мелорин</a>
               </li>
             </ul>
+          -->
           <li><a href="payment.html">Доставка и оплата</a>
           </li>
           <li><a href="gllacy.html">О Компании</a>
           </li>
           </li>
         </ul>
+
 
         <ul class="user-navigation">
           <li>
@@ -70,13 +73,46 @@
     <section class="main-menu">
       <h1 class="page-title">Сливочное мороженое</h1>
       <div class="main-button">
-        <ul>
-          <li>Сортировка</li>
-          <li>Цена: 100 руб.- 500 руб.</li>
-          <li>Жирность</li>
-          <li>Наполнители</li>
+        <ul class="menu-selection">
+          <li>
+            <label for="select">Сортировка:</label>
+            <select name="select">
+              <option value="">по популярности</option>
+            </select>
+          </li>
+          <li>
+            <label for="price">Цена: 100 руб.- 500 руб.</label>
+            <input type="range" id="price" name="price" min="100" max="500" step="1" value="10">
+          </li>
+          <li><label for="content">Жирность:</label>
+            <label>
+              <input type="radio" name="content" value="0%">0%
+            </label>
+            <label>
+              <input type="radio" name="content" value="до 10%" checked>до 10%
+            </label>
+            <label>
+              <input type="radio" name="content" value="до 30%">до 30%
+            </label>
+            <label>
+              <input type="radio" name="content" value="выше 30%">выше 30%
+            </label>
+          </li>
+          <li>Наполнители:
+            <input type="checkbox" name="шоколадные" id="choco" checked>
+            <label for="choco">шоколадные</label>
+            <input type="checkbox" name="сахарные присыпки" id="sugar" checked>
+            <label for="sugar">сахарные присыпки</label>
+            <input type="checkbox" name="фрукты" id="fruit">
+            <label for="fruit">фрукты</label>
+            <input type="checkbox" name="сиропы" id="syrup">
+            <label for="syrup">сиропы</label>
+            <input type="checkbox" name="джемы" id="jam">
+            <label for="jam">джемы</label>
+          </li>
+          <li><button>Применить</button></li>
         </ul>
-        <button>Применить</button>
+
       </div>
     </section>
     <section class="main-catalog">
@@ -85,7 +121,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              <span class="catalog-category">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -101,7 +137,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочно-кофейное с кусочками шоколада</p>
+              <span class="catalog-category">Сливочно-кофейное с кусочками шоколада</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -117,7 +153,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              <span class="catalog-category">Сливочно-клубничное с присыпкой из белого шоколада</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -133,7 +169,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочное крем-брюле с карамельной подливкой</p>
+              <span class="catalog-category">Сливочное крем-брюле с карамельной подливкой</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -149,7 +185,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочное с брусничный джемом</p>
+              <span class="catalog-category">Сливочное с брусничный джемом</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -165,7 +201,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочно-черничное с цельными ягодами черники</p>
+              <span class="catalog-category">Сливочно-черничное с цельными ягодами черники</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -181,7 +217,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочно-лимонное с карамельной присыпкой</p>
+              <span class="catalog-category">Сливочно-лимонное с карамельной присыпкой</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -197,7 +233,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочное с шоколадной стружкой</p>
+              <span class="catalog-category">Сливочное с шоколадной стружкой</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -213,7 +249,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочно-ванильное с кусочками шоколада</p>
+              <span class="catalog-category">Сливочно-ванильное с кусочками шоколада</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -229,7 +265,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочное с ментоловым сиропом</p>
+              <span class="catalog-category">Сливочное с ментоловым сиропом</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -245,7 +281,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочное с кусочками черного шоколада</p>
+              <span class="catalog-category">Сливочное с кусочками черного шоколада</span>
             </a>
           </h3>
           <p class="catalog-item-image">
@@ -261,7 +297,7 @@
         <li class="catalog-product">
           <h3>
             <a href="catalog-item.html">
-              <p class="catalog-category">Сливочное смятным сиропом</p>
+              <span class="catalog-category">Сливочное смятным сиропом</span>
             </a>
           </h3>
           <p class="catalog-item-image">

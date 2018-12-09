@@ -11,8 +11,36 @@ body {
   background-color: #849d8f;
 }
 
+.main-navigator {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 1200px;
+
+  outline: 1px solid red;
+}
+
+.main-header-logo {
+  width: 155px;
+  height: 67;
+  padding-top: 10px;
+  padding-left: 27px;
+  outline: 1px solid red;
+}
+
 .menu-navigator a {
   color: #ffffff;
+}
+
+.menu-navigator {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
 }
 
 .menu-list,
@@ -26,11 +54,34 @@ body {
 .main-menu-navigator,
 .user-navigation {
   list-style: none;
+
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+
+  outline: 1px solid red;
+}
+
+
+.user-navigation {
+  justify-content: flex-end;
+  width: 294px;
+  justify-content: space-around;
+
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .navigator-contact {
   color: #ffffff;
+  width: 54px;
   text-align: right;
+
+  flex-grow: 1;
+
+  outline: 1px solid red;
 }
 
 .nav-search,
@@ -43,17 +94,47 @@ body {
 .main-menu-navigator {
   font-size: 14px;
   line-height: 18px;
+  width: 724px;
 }
 
-.user-navigation {
-  font-size: 14px;
-  line-height: 16px;
+.sale-slade {
+  display: flex;
+  flex-direction: column;
+
+  width: 1200px;
+  list-style: none;
+
+  outline: 1px solid red;
+}
+
+.main-slade a {
+  text-decoration: none;
 }
 
 .breadcrumbs a,
 .breadcrumbs {
   color: #ffffff;
   list-style: none;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+
+  width: 1200px;
+  outline: 1px solid red;
+}
+
+.menu-selection {
+  list-style: none;
+  margin: 0;
+}
+
+.main-button {
+ display: flex;
+
+
 }
 
 
@@ -64,18 +145,19 @@ body {
   text-align: center;
 }
 
-.main-slade {
-  list-style: none;
-}
+.sale-wrapper {
+  display: flex;
+  flex-direction: row;
 
-.main-slade a {
-  text-decoration: none;
+  width: 1172px;
+  padding-left: 27px;
+
+  outline: 1px solid red;
 }
 
 .button-link a {
   color: #ffffff;
   text-decoration: none;
-
 
   border-bottom: 2px solid #ee5e3e;
   background-color: #ee5e3e;
@@ -113,6 +195,18 @@ body {
   text-align: 41px;
 }
 
+.sale-berries,
+.sale-chocolate {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 17px;
+  padding-left: 20px;
+
+  width: 560px;
+  height: 229px;
+}
+
 .sale-chocolate {
   background-image: url("img/chocolate.jpg");
   background-repeat: no-repeat;
@@ -122,6 +216,8 @@ body {
   color: #ffffff;
   font-size: 18px;
   text-align: 22px;
+
+  padding-top: 6px;
 }
 
 .sale-berries a,
@@ -129,9 +225,22 @@ body {
   color: #ffffff;
   text-decoration: none;
   list-style: none;
+  text-align: center;
+
+  height: 47px;
+  width: 166px;
 
   border-color: #ee5e3e;
   background-color: #ee5e3e;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  width: 1200px;
+  outline: 1px solid red;
 }
 
 .catalog-product,
@@ -158,12 +267,20 @@ body {
 }
 
 .main-info {
+  display: flex;
+  flex-wrap: wrap;
+
   background-image: url("img/wafer.jpg");
   background-color: #ede1c7;
 
   color: #323232;
+  width: 1146px;
+
+  outline: 1px solid red;
 }
 .main-info-market {
+  flex-grow: 1;
+
   color: #575550;
   font-size: 24px;
   line-height: 30px;
@@ -176,14 +293,28 @@ body {
   list-style: none;
 }
 
-.manufacture {
-  list-style-image: url("img/ice-creamsmall.png");
+.manufacture,
+.ecology,
+.Components,
+.advantages-delivery {
+  width: 573px;
+}
+
+.blog-mailling {
+  display: flex;
+  justify-content: space-around;
+
+  width: 1200px;
+
+  outline: 1px solid red;
 }
 
 .blog {
   background-image: url("img/barries.jpg");
   background-repeat: no-repeat;
   background-color: #ffffff;
+
+  width: 560px;
 }
 
 .blog-news {
@@ -202,6 +333,8 @@ body {
   background-color: #f8f7f4;
   border: 5px dotted #92cdff;
 
+  width: 560px;
+
   color: #848483;
 }
 
@@ -210,6 +343,10 @@ body {
   background-color: #ffffff;
 
   color: #323232;
+}
+
+.main-footer {
+  display: flex;
 }
 
 .footer-list a,
