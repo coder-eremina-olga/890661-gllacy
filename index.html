@@ -11,10 +11,10 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigator">
-      <a class="main-header-logo">
-        <img src="img/Logo.svg" width="154" height="64" alt="Логотип Глейси"></a>
-      <div class="menu-navigator">
+    <div class="header-conteiner">
+      <nav class="main-navigator">
+        <a class="main-header-logo">
+          <img src="img/Logo.svg" width="154" height="64" alt="Логотип Глейси"></a>
         <ul class="main-menu-navigator">
           <li><a href="сatalog.html">Каталог</a>
             <!-- всплывающее меню
@@ -49,13 +49,13 @@
             <a class="basket" href="#">Пусто</a>
           </li>
         </ul>
-      </div>
 
-      <div class="navigator-contact">
-        <p class="navigator-time"> c 10 до 20, ежедневно</p>
-        <p class="navigator-number"> 8 812 450-25-25</p>
-      </div>
-    </nav>
+        <div class="navigator-contact">
+          <p class="navigator-time"> c 10 до 20, ежедневно</p>
+          <p class="navigator-number"> 8 812 450-25-25</p>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
@@ -107,16 +107,17 @@
         <a href="#">Хочу шоколадки!</a>
       </section>
     </div>
+
     <section class="catalog-item">
       <h1 class="visually-hidden">Каталог товаров</h1>
       <ul class="catalog-list">
         <li class="catalog-product">
-          <a href="catalog-item.html">
-            <p class="catalog-category">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          </a>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/firs-page-product1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </a>
+            <a href="catalog-item.html">
+              <p class="catalog-category">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             </a>
           </p>
           <p class="catalog-item-price">
@@ -124,12 +125,12 @@
           </p>
         </li>
         <li class="catalog-product">
-          <a href="catalog-item.html">
-            <p class="catalog-category">Сливочно-кофейное с кусочками шоколада</p>
-          </a>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/firs-page-product2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            </a>
+            <a href="catalog-item.html">
+              <p class="catalog-category">Сливочно-кофейное с кусочками шоколада</p>
             </a>
           </p>
           <p class="catalog-item-price">
@@ -137,12 +138,12 @@
           </p>
         </li>
         <li class="catalog-product">
-          <a href="catalog-item.html">
-            <p class="catalog-category">Сливочно-клубничное с присыпкой из белого шоколада</p>
-          </a>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/firs-page-product3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            </a>
+            <a href="catalog-item.html">
+              <p class="catalog-category">Сливочно-клубничное с присыпкой из белого шоколада</p>
             </a>
           </p>
           <p class="catalog-item-price">
@@ -150,14 +151,14 @@
           </p>
         </li>
         <li class="catalog-product">
-          <a href="catalog-item.html">
-            <p class="catalog-category">Сливочное крем-брюле с карамельной подливкой</p>
-          </a>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/firs-page-product4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </a>
           </p>
+          <a href="catalog-item.html">
+            <p class="catalog-category">Сливочное крем-брюле с карамельной подливкой</p>
+          </a>
           <p class="catalog-item-price">
             <b>415 <span class="rub">ք</span>/кг</b>
           </p>
@@ -171,7 +172,7 @@
         производства на развес
       </h2>
 
-      <ul>
+      <ul class="information">
         <li class="info-list">
           <h3 class="visually-hidden">Собственное производство</h3>
           <p class="manufacture">Все наше мороженое изготавливается на собственном производстве, с использованием
@@ -180,8 +181,7 @@
         <li class="info-list">
           <h3 class="visually-hidden">Качество сырья</h3>
           <p class="ecology">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-            Все
-            дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
         <li class="info-list">
           <h3 class="visually-hidden">Ингридиенты</h3>
@@ -222,7 +222,7 @@
         <p class="contact-text">(с 10 до 20 ежедневно)</p>
         <button class="Feedback">Форма обратной связи</button>
       </section>
-      </section>
+    </section>
   </main>
 
   <footer class="main-footer">
