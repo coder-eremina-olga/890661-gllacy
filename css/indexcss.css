@@ -23,6 +23,11 @@ body {
   clip: rect(0, 0, 0, 0);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-navigator {
   display: flex;
   flex-direction: row;
@@ -54,16 +59,22 @@ body {
 
 .main-menu-navigator a {
   color: #ffffff;
+  display: block;
+
+  padding: 12px 8px;
 
 }
 
 .main-menu-navigator {
   display: flex;
-
-  list-style: none;
+  flex-wrap: wrap;
 
   width: 600px;
   margin: 0;
+
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
 
   outline: 1px solid red;
 }
@@ -72,12 +83,14 @@ body {
 
 .user-navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content:flex-end;
 
   list-style: none;
-  width: 293px;
-  margin: 0;
+  width: 350px;
+  min-height: 68px;
+  margin: 0 auto;
   padding: 0;
+
 
   font-size: 14px;
   line-height: 16px;
@@ -85,6 +98,14 @@ body {
   outline: 1px solid red;
 }
 
+.user-navigation a {
+  text-decoration: none;
+  padding: 12px 8px;
+  margin-top: 23px;
+  margin: 8px;
+  margin-right: 0;
+
+}
 
 .navigator-contact {
   color: #ffffff;
@@ -99,17 +120,58 @@ body {
 .nav-search,
 .user-entrance,
 .basket {
-  border: 2px solid #ffffff;
+  display: block;
+  background-color: #9db1a5;
+  border-radius: 40px;
+  padding: 12px 8px;
+
   color: #ffffff;
 }
 
-.main-menu-navigator {
-  display: flex;
-  justify-content: space-between;
+.user-navigation .user-entrance {
+  position: relative;
+  padding-left: 40px;
+}
+
+.user-entrance::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 18px;
+
+  background-image: url("img/Вход.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  width: 93px;
+  height: 18px;
+
+}
+
+.user-navigation .nav-search {
+  position: relative;
+
+  width: 19px;
+  height: 16px;
+
+}
+
+.nav-search::before {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 10px;
+
+  width: 32px;
+  height: 34px;
+  padding: 8px;
 
 
-  font-size: 16px;
-  line-height: 18px;
+  background-image: url("img/loupa.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .navigator-number {
@@ -155,9 +217,11 @@ body {
 }
 
 .container {
-  width: 1146px;
+  max-width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 .slider {
