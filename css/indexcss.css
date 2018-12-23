@@ -8,14 +8,12 @@ body {
   font-weight: 700;
   color: #ffffff;
 
-  min-width: 1200px;
-
   background-color: #849d8f;
 }
 
 .container {
-  max-width: 1200px;
-  min-width: 1200px;
+  max-width: 1146px;
+  min-width: 1146px;
   margin: 0 auto;
   padding-left: 27px;
   padding-right: 27px;
@@ -52,22 +50,17 @@ img {
   flex-wrap: wrap;
 
   align-items: flex-start;
-  width: 1200px;
   margin: 0 auto;
+  padding-top: 10px;
 
-  outline: 1px solid red;
-}
-
-.header-conteiner {
-  display: flex;
-
-  width: 1200px;
-  margin: 0 auto;
   outline: 1px solid red;
 }
 
 .main-header-logo {
   padding-top: 10px;
+  width: 154px;
+  margin: 0;
+  padding: 0;
 
   outline: 1px solid red;
 }
@@ -85,7 +78,6 @@ img {
   color: #323232;
   background-color: #f7f6f3;
   border-radius: 40px;
-
 }
 
 .main-menu-navigator a:active {
@@ -97,11 +89,8 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  width: 699px;
-  margin: 0;
-
-  padding-top: 18px;
-  padding-left: 21px;
+  margin: 0 auto;
+  width: 716px;
 
   list-style: none;
   font-size: 16px;
@@ -115,13 +104,7 @@ img {
   justify-content:flex-end;
 
   list-style: none;
-  width: 315px;
-
   margin: 0 auto;
-  margin-right: 0;
-  padding-right: 0;
-  padding-top: 10px;
-  padding-left: 10px;
 
   font-size: 14px;
   line-height: 16px;
@@ -237,23 +220,18 @@ img {
   color: #ffffff;
   font-size: 22px;
   line-height: 24px;
+  margin: 0;
 }
 
 .navigator-time {
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
 }
 
-.main-container {
-  width: 1200px;
-  margin: 0 auto;
-
-  outline: 1px solid red;
-}
 
 .site-wrapper {
-  min-width: 1200px;
   background-color: #849d8f;
   background-image: url("img/ice-creamslade1.png");
   background-repeat: no-repeat;
@@ -280,7 +258,8 @@ img {
 .slider {
   position: relative;
 
-  padding-top: 321px;
+  padding-top: 280px;
+  margin-bottom: 38px;
 
   text-align: center;
   color: #ffffff;
@@ -405,7 +384,6 @@ img {
 
   margin: 0 auto;
   padding: 0px;
-  width: 1200px;
   outline: 1px solid red;
 }
 
@@ -417,8 +395,7 @@ img {
   display: flex;
   justify-content: space-between;
 
-  width: 1200px;
-  margin: 0 auto;
+  margin-bottom: 40px;
   padding: 0;
 
   outline: 1px solid red;
@@ -466,10 +443,10 @@ img {
 
 .sale-berries,
 .sale-chocolate {
-  margin: 0;
-
-  padding: 0;
+  width: 560px;
   border-radius: 20px;
+  margin: 0;
+  padding: 0;
 
   outline: 1px solid red;
 }
@@ -505,7 +482,7 @@ img {
   text-align: center;
 
   padding: 18px 10px;
-  margin-right: 0;
+
 
   border-color: #ee5e3e;
   background-color: #ee5e3e;
@@ -526,19 +503,14 @@ img {
 }
 
 
-.catalog-item {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .catalog-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  width: 1200px;
   margin: 0 auto;
   padding: 0;
+  margin-bottom: 34px;
 
   outline: 1px solid red;
 }
@@ -547,13 +519,13 @@ img {
 .catalog-product a{
   color: #ffffff;
   list-style: none;
+
 }
 
 .catalog-product {
   margin: 0;
   padding: 0;
   width: 267px;
-  min-height: 405px;
 
   outline: 1px solid red;
 }
@@ -587,7 +559,7 @@ img {
   color: #ffffff;
   font-size: 16px;
   line-height: 22px;
-  justify-content: baseline;
+  text-align: center;
 }
 
 .catalog-product b {
@@ -605,17 +577,17 @@ img {
   line-height: 45px;
 }
 
-.feature {
-  display: flex;
-
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .main-info {
+  width: 1146px;
+
   background-image: url("img/wafer.jpg");
   background-repeat: no-repeat;
   background-color: #ede1c7;
+  border-radius: 20px;
+
+  margin: 0 auto;
+  margin-bottom: 40px;
 
   color: #323232;
 
@@ -629,11 +601,21 @@ img {
   outline: 1px solid red;
 }
 
-
 .main-info-market {
   color: #575550;
   font-size: 24px;
   line-height: 30px;
+
+  padding-top: 23px;
+  padding-left: 15px;
+
+  outline: 1px solid red;
+}
+
+.information {
+  display: ;
+  width: 560px;
+
 }
 
 .info-list {
@@ -643,14 +625,21 @@ img {
   list-style: none;
 }
 
+.manufacture::after {
+  content: "";
+
+  position: absolute;
+  background-image: url("img/ice-creamsmall.png");
+
+}
 
 .blog-mailling {
   display: flex;
   justify-content: space-between;
 
-  width: 1200px;
   margin: 0 auto;
   padding: 0;
+  margin-bottom: 37px;
 
   outline: 1px solid red;
 }
@@ -659,6 +648,7 @@ img {
   background-image: url("img/barries.jpg");
   background-repeat: no-repeat;
   background-color: #ffffff;
+  border-radius: 20px;
 
   width: 560px;
 }
@@ -678,6 +668,7 @@ img {
 .mailing {
   background-color: #f8f7f4;
   border: 5px dotted #92cdff;
+  border-radius: 20px;
 
   width: 560px;
 
@@ -695,7 +686,6 @@ img {
   display: flex;
   justify-content: space-between;
 
-  width: 1200px;
   margin: 0 auto;
   padding: 0;
 
