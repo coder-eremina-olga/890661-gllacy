@@ -7,6 +7,14 @@
   <link href="css/cssfile.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link href="css/indexcss.css" rel="stylesheet">
+  <!--Pixel Perfect-->
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $.pixlayout({ clip: true, src: "gllacy-index.jpg", show: true, center: true, top: 0, left: 0, pervious: false });
+    });
+  </script>
 </head>
 
 <body>
@@ -19,45 +27,64 @@
         <nav class="main-navigator">
           <a class="main-header-logo">
             <img src="img/Logo.svg" width="154" height="64" alt="Логотип Глейси"></a>
-
-          <ul class="main-menu-navigator">
-            <li class="dropdown"><a href="сatalog.html">Каталог</a>
-              <ul class="dropdown-child">
-                <li><a href="#">Новинки</a>
-                </li>
-                <li><a href="#">Сливочное</a>
-                </li>
-                <li><a href="#">Щербеты</a>
-                </li>
-                <li><a href="№">Фруктовый лед</a>
-                </li>
-                <li><a href="#">Мелорин</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="payment.html">Доставка и оплата</a>
-            </li>
-            <li><a href="gllacy.html">О Компании</a>
-            </li>
-          </ul>
+          <div class="main-menu-navigator">
+            <ul class="main-menu_wrapper">
+              <li class="dropdown"><a class="navigator-menu" href="сatalog.html"><span class="menu-cataloge">Каталог</span></a>
+                <ul class="dropdown-child">
+                  <li class="dropdown-child__item"><a href="#"><span class="dropdown-child-bold">Новинки</span></a>
+                  </li>
+                  <li class="dropdown-child__item_separator"></li>
+                  <li class="dropdown-child__item"><a href="сatalog.html">Сливочное</a>
+                  </li>
+                  <li class="dropdown-child__item"><a href="#">Щербеты</a>
+                  </li>
+                  <li class="dropdown-child__item"><a href="№">Фруктовый лед</a>
+                  </li>
+                  <li class="dropdown-child__item"><a href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="navigator-menu" href="payment.html">Доставка и оплата</a>
+              </li>
+              <li><a class="navigator-menu" href="gllacy.html">О Компании</a>
+              </li>
+            </ul>
+          </div>
 
           <ul class="user-navigation">
-            <li>
-              <a class="nav-search" href="#"></a>
+            <li class="user-navigation-item">
+              <a class="nav-search" href="#"><span class="visually-hidden">Поиск</span></a>
+              <form class="modal-search" action="/echo.htmlacademy.ru" method="GET">
+                <label for="search-link"></label>
+                <input type="search" name="search" id="search-link" placeholder="Что ищем?">
+              </form>
             </li>
-            <li>
-              <a class="user-entrance">Вход</a>
+            <li class="user-navigation-item">
+              <a class="user-entrance" href="#">Вход</a>
+              <form class="modal-entrance" action="/echo.htmlacademy.ru" method="POST">
+                <label for="entrance-link"></label>
+                <input type="email" name="email" id="entrance-link" placeholder="Электронная почта">
+                <label class="visually-hidden" for="entrance-password">Пароль</label>
+                <input type="password" name="password" id="entrance-password" placeholder="Пароль">
+                <div class="user-entrance-wrapper">
+                  <button class="button entrance-form-button" type="submit">Войти</button>
+                  <div class="user-entrance-wrapper-item">
+                    <a class="navigator-password-recovery" href="#">Забыли пароль?</a>
+                    <a class="navigator-registration" href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </form>
             </li>
             <li>
               <a class="basket" href="#">Пусто</a>
             </li>
           </ul>
-
-          <div class="navigator-contact">
-            <p class="navigator-time"> c 10 до 20, ежедневно</p>
-            <p class="navigator-number"> 8 812 450-25-25</p>
-          </div>
         </nav>
+
+        <div class="navigator-contact">
+          <p class="navigator-time"> c 10 до 20, ежедневно</p>
+          <p class="navigator-number"> 8 812 450-25-25</p>
+        </div>
       </header>
 
       <main class="main-container">
@@ -65,9 +92,9 @@
 
         <section class="slider">
           <div class="slider-controls">
-            <label for="product-1">Первый</label>
-            <label for="product-2">Второй</label>
-            <label for="product-3">Третий</label>
+            <label for="product-1">1</label>
+            <label for="product-2">2</label>
+            <label for="product-3">3</label>
           </div>
           <ul class="slider-list">
             <li class="slider-item slide" id="slide1">
@@ -110,61 +137,64 @@
         <section class="catalog-item">
           <h1 class="visually-hidden">Каталог товаров</h1>
           <ul class="catalog-list">
-
             <li class="catalog-product">
-              <a href="catalog-item.html">
+              <a class="cataloge-link" href="catalog-item.html">
                 <h3>
                   <span class="catalog-category">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
                 </h3>
                 <p class="catalog-item-image">
-                  <img src="img/firs-page-product1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </p>
               </a>
               <p class="catalog-item-price">
-                <b>310 ք/<span class="rub">кг</span></b>
+                <b>310 ₽/<span class="rub">кг</span></b>
               </p>
+              <a class="button-link hidden" href="#">Быстрый просмотр</a>
             </li>
 
             <li class="catalog-product">
-              <a href="catalog-item.html">
+              <a class="cataloge-link" href="catalog-item.html">
                 <h3>
                   <span class="catalog-category">Сливочно-кофейное с кусочками шоколада</span>
                 </h3>
                 <p class="catalog-item-image">
-                  <img src="img/firs-page-product2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                  <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                 </p>
               </a>
               <p class="catalog-item-price">
-                <b>380 ք/<span class="rub">кг</span></b>
+                <b>380 ₽/<span class="rub">кг</span></b>
               </p>
+              <a class="button-link hidden" href="#">Быстрый просмотр</a>
             </li>
 
             <li class="catalog-product">
-              <a href="catalog-item.html">
+              <a class="cataloge-link" href="catalog-item.html">
                 <h3>
                   <span class="catalog-category">Сливочно-клубничное с присыпкой из белого шоколада</span>
                 </h3>
                 <p class="catalog-item-image">
-                  <img src="img/firs-page-product3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 </p>
               </a>
               <p class="catalog-item-price">
-                <b>355 ք/<span class="rub">кг</span></b>
+                <b>355 ₽/<span class="rub">кг</span></b>
               </p>
+              <a class="button-link hidden" href="#">Быстрый просмотр</a>
             </li>
 
             <li class="catalog-product">
-              <a href="catalog-item.html">
+              <a class="cataloge-link" href="catalog-item.html">
                 <h3>
                   <span class="catalog-category">Сливочное крем-брюле с карамельной подливкой</span>
                 </h3>
                 <p class="catalog-item-image">
-                  <img src="img/firs-page-product4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                  <img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                 </p>
               </a>
               <p class="catalog-item-price">
-                <b>415 ք/<span class="rub">кг</span></b>
+                <b>415 ₽/<span class="rub">кг</span></b>
               </p>
+              <a class="button-link hidden" href="#">Быстрый просмотр</a>
             </li>
           </ul>
         </section>
@@ -174,8 +204,7 @@
             собственного
             производства на развес
           </h2>
-
-          <ul class="information">
+          <ul class="information1">
             <li class="info-list">
               <h3 class="visually-hidden">Собственное производство</h3>
               <p class="manufacture">Все наше мороженое изготавливается на собственном производстве, с использованием
@@ -187,9 +216,11 @@
                 качества.
                 Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             </li>
+          </ul>
+          <ul class="information2">
             <li class="info-list">
               <h3 class="visually-hidden">Ингридиенты</h3>
-              <p class="Components">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+              <p class="components">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
                 компаний,
                 с которыми нас связывает долговременное сотрудничество.</p>
             </li>
@@ -199,6 +230,7 @@
                 термопаке,который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </li>
           </ul>
+
         </section>
 
         <div class="blog-mailling">
@@ -211,100 +243,172 @@
 
           <section class="mailing">
             <h2 class="visually-hidden">Подписка на рассылку</h2>
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
-              происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <button class="button" type="submit">Отправить</button>
+            <p class="mailing-category">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
+              вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <div class="mailing-subscription">
+              <p class="subscription">
+                <label for="subscription"></label>
+                <input type="text" name="email" id="subscription" placeholder="Электронная почта">
+              </p>
+              <button class="button button-subscription" type="submit">Отправить</button>
+            </div>
           </section>
         </div>
 
-        <section class="contact-map">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adb65eb243e3164d010b3a6e7f2d252370dc77e87eae7c807715a4c73eb8c125a&amp;width=1146&amp;height=427&amp;lang=ru_RU&amp;scroll=true">
-          </script>
-          <h2 class="visually-hidden">Контактная информация</h2>
-          <section class="contact-info">
-            <p class="contact-text">Адрес главного офиса и офлайн-магазина:</p>
-            <p class="adress-text">ул.Б.Конюшенная,19/8, Санкт-Петербург </p>
-            <p class="contact-text">для заказов по телефону</p>
-            <a class="telephone" href="tel:+78126668266">+7(812) 666-82-66</a>
-            <p class="contact-text">(с 10 до 20 ежедневно)</p>
-            <button class="Feedback">Форма обратной связи</button>
+        <div class="map-wrapper">
+          <section class="contact-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0d0635cab63047367016ff91f1ff8c8949199abb6c8be1899e61131c39d8cfd3&amp;width=1200&amp;height=429&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+            <h2 class="visually-hidden">Контактная информация</h2>
+            <div class="contact-info">
+              <section class="contact-adress">
+                <div class="adress">
+                  <p class="contact-text">Адрес главного офиса<br>и офлайн-магазина:</p>
+                  <p class="adress-text">ул.Б.Конюшенная,19/8, Санкт-Петербург </p>
+                </div>
+                <div class="adress">
+                  <p class="contact-text">для заказов по телефону</p>
+                  <a class="telephone" href="tel:+78126668266">+7(812) 666-82-66</a>
+                  <p class="contact-text">(с 10 до 20 ежедневно)</p>
+                </div>
+                <button class="button feedback">Форма обратной связи</button>
+              </section>
+            </div>
           </section>
-        </section>
+        </div>
       </main>
 
       <footer class="main-footer">
         <h3 class="visually-hidden">Мы в социальных сетях</h3>
-        <div class="footer-social">
-          <ul class="social-news">
-            <li><a class="social-button" href="#">Твиттер</a>
-            </li>
-            <li><a class="social-button" href="#">Инстаграмм</a>
-            </li>
-            <li><a class="social-button" href="#">Вконтакте</a>
-            </li>
-            <li><a class="social-button" href="#">Фейсбук</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social-news">
+          <li>
+            <a class="social-button tweet" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button insta" href="#">
+              <span class="visually-hidden">Инстаграмм</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button facebook" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button vkontakte" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+        </ul>
 
         <h3 class="visually-hidden">Дополнительная информация о магазине</h3>
-        <div class="footer-list">
-          <ul>
-            <li class=""><a href="#">для поставщиков</a>
+        <div class="wrapper-info">
+          <ul class="footer-info1">
+            <li class="footer-link provider"><a href="#"><span>Для поставщиков</span></a>
             </li>
-            <li class=""><a href="#">О производстве</a>
+            <li class="footer-link"><a href="#">О производстве</a>
             </li>
-            <li class=""><a href="#">Наши документы</a>
+          </ul>
+          <ul class="footer-info2">
+            <li class="footer-link"><a href="#">Наши документы</a>
             </li>
-            <li class=""><a href="#">Экологические стандарты</a>
+            <li class="footer-link"><a href="#">Экологические стандарты</a>
             </li>
           </ul>
         </div>
+
         <p class="footer-copyright">
-          <b class="copyright">Сделано в</b>
-          <a class="academy" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="footer-link academy" href="https://htmlacademy.ru">Сделано в HTML Academy © 2017</a>
         </p>
-      </footer>
+      </footer>e
 
-      <section>
-        <h2 class="visually-hidden">Мы обязательно вам ответим!</h2>
-        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">Закрыть</button>
-        <form class="Feedback-form" action="#" method="POST">
-          <p class="Feedback--name">
-            <label for="name">Ваше имя</label>
-            <input type="text" name="name" id="name" placeholder="Как вас зовут?">
-          </p>
-          <p class="Feedback-email">
-            <label for="email">Ваш e-mail</label>
-            <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
-          </p>
-          <p class="Feedback-notebook">
-            <label for="note">Форма заметки</label>
-            <textarea class="Feedback-form-textarea" id="note" name="note" rows="9" placeholder="Напишите что-нибудь..."></textarea>
-          </p>
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
-
-      <section>
-        <form class="modal-form" action="#" method="POST">
-          <p>
-            <label for="email-entrance">Ваш e-mail</label>
-            <input type="text" id="email-entrance" name="name" placeholder="e-mail">
-          </p>
-          <p>
-            <label for="navigator-password">Пароль</label>
-            <input type="text" id="navigator-password" name="password" placeholder="Пароль">
-          </p>
-          <p><a class="navigator-password-recovery" href="#">Забыли пароль?</a>
-          </p>
-          <p><a class="navigator-registration" href="#">Новая регистрация</a>
-          </p>
-          <button class="entrance-submit" type="submit">Войти</button>
-        </form>
+      <section class="modal modal-answear">
+        <div class="modal-wrapper">
+          <h2>Мы обязательно вам ответим!</h2>
+          <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">Закрыть</button>
+          <form class="Feedback-form" action="#" method="POST">
+            <p class="Feedback--name">
+              <label for="name"></label>
+              <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+            </p>
+            <p class="Feedback-email">
+              <label for="email"></label>
+              <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
+            </p>
+            <p class="Feedback-notebook">
+              <label for="note"></label>
+              <textarea class="Feedback-form-textarea" id="note" name="note" rows="9" placeholder="Напишите что-нибудь..."></textarea>
+            </p>
+            <button type="submit" class="button button-link ">Отправить</button>
+          </form>
+        </div>
       </section>
     </div>
   </div>
+
+  <script>
+    var link = document.querySelector(".feedback");
+
+    var popup = document.querySelector(".modal-login");
+    var close = popup.querySelector(".modal-close");
+
+    var form = popup.querySelector("form");
+    var login = popup.querySelector("[name=login]");
+    var password = popup.querySelector("[name=password]");
+
+    var isStorageSupport = true;
+    var storage = "";
+
+    try {
+      storage = localStorage.getItem("login");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+
+      if (storage) {
+        login.value = storage;
+        password.focus();
+      } else {
+        login.focus();
+      }
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
+    });
+
+    form.addEventListener("submit", function (evt) {
+      if (!login.value || !password.value) {
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("login", login.value);
+        }
+      }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal-show")) {
+          popup.classList.remove("modal-show");
+          popup.classList.remove("modal-error");
+        }
+      }
+    });
+  </script>
+
 </body>
 
 </html>
