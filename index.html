@@ -6,15 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="css/cssfile.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link href="css/indexcss.css" rel="stylesheet">
-  <!--Pixel Perfect-->
-  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $.pixlayout({ clip: true, src: "gllacy-index.jpg", show: true, center: true, top: 0, left: 0, pervious: false });
-    });
-  </script>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -263,7 +255,7 @@
             <div class="contact-info">
               <section class="contact-adress">
                 <div class="adress">
-                  <p class="contact-text">Адрес главного офиса<br>и офлайн-магазина:</p>
+                  <p class="contact-text">Адрес главного офиса <br>и офлайн-магазина:</p>
                   <p class="adress-text">ул.Б.Конюшенная,19/8, Санкт-Петербург </p>
                 </div>
                 <div class="adress">
@@ -322,93 +314,32 @@
         <p class="footer-copyright">
           <a class="footer-link academy" href="https://htmlacademy.ru">Сделано в HTML Academy © 2017</a>
         </p>
-      </footer>e
+      </footer>
 
+      <div class="modal-wrapper feedback-overlay js-feedback-overlay"></div>
       <section class="modal modal-answear">
-        <div class="modal-wrapper">
-          <h2>Мы обязательно вам ответим!</h2>
-          <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">Закрыть</button>
-          <form class="Feedback-form" action="#" method="POST">
-            <p class="Feedback--name">
-              <label for="name"></label>
-              <input type="text" name="name" id="name" placeholder="Как вас зовут?">
-            </p>
-            <p class="Feedback-email">
-              <label for="email"></label>
-              <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
-            </p>
-            <p class="Feedback-notebook">
-              <label for="note"></label>
-              <textarea class="Feedback-form-textarea" id="note" name="note" rows="9" placeholder="Напишите что-нибудь..."></textarea>
-            </p>
-            <button type="submit" class="button button-link ">Отправить</button>
-          </form>
-        </div>
+
+        <h2>Мы обязательно вам ответим!</h2>
+        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">Закрыть</button>
+        <form class="Feedback-form" action="#" method="POST">
+          <p class="Feedback--name">
+            <label for="name"></label>
+            <input class="feedback-input" type="text" name="name" id="name" placeholder="Как вас зовут?">
+          </p>
+          <p class="Feedback-email">
+            <label for="email"></label>
+            <input class="feedback-input" type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
+          </p>
+          <p class="Feedback-notebook">
+            <label for="note"></label>
+            <textarea class="Feedback-form-textarea" id="note" name="note" rows="9" placeholder="Напишите что-нибудь..."></textarea>
+          </p>
+          <button type="submit" class="button button-link ">Отправить</button>
+        </form>
       </section>
     </div>
   </div>
-
-  <script>
-    var link = document.querySelector(".feedback");
-
-    var popup = document.querySelector(".modal-login");
-    var close = popup.querySelector(".modal-close");
-
-    var form = popup.querySelector("form");
-    var login = popup.querySelector("[name=login]");
-    var password = popup.querySelector("[name=password]");
-
-    var isStorageSupport = true;
-    var storage = "";
-
-    try {
-      storage = localStorage.getItem("login");
-    } catch (err) {
-      isStorageSupport = false;
-    }
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-
-      if (storage) {
-        login.value = storage;
-        password.focus();
-      } else {
-        login.focus();
-      }
-    });
-
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
-    });
-
-    form.addEventListener("submit", function (evt) {
-      if (!login.value || !password.value) {
-        evt.preventDefault();
-        popup.classList.remove("modal-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("modal-error");
-      } else {
-        if (isStorageSupport) {
-          localStorage.setItem("login", login.value);
-        }
-      }
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show");
-          popup.classList.remove("modal-error");
-        }
-      }
-    });
-  </script>
-
+  <script src="js/miniscript.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="css/cssfile.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link href="css/indexcss.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -64,8 +64,35 @@
               </div>
             </form>
           </li>
-          <li>
+          <li class="user-navigation-item">
             <a class="basket basket-user" href="#">2 товара</a>
+            <section class="basket-form">
+              <h3 class="visually-hidden">Корзина</h3>
+              <table class="cart-table">
+                <tr>
+                  <th class="visually-hidden">Изображение</th>
+                  <th class="visually-hidden">Товары</th>
+                  <th class="visually-hidden">Вес и стоимость</th>
+                  <th class="visually-hidden">Сумма</th>
+                </tr>
+                <tr class="basket-item">
+                  <td class="cross"></td>
+                  <td class="table-image"><img src="img/Мороженко1.png" alt="Пломбир с апельсиновым джемом"></td>
+                  <td class="table-item">Пломбир с апельсиновым джемом</td>
+                  <td class="table-weight">1,5кг х<span class="table-price">200 руб.</span></td>
+                  <td class="row-total">300 руб.</td>
+                </tr>
+                <tr class="basket-item">
+                  <td class="cross"></td>
+                  <td class="table-image"><img src="img/Мороженко2.png" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                  <td class="table-item">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="table-weight">1,5кг х<span class="table-price">300 руб.</span></td>
+                  <td class="row-total">450 руб.</td>
+                </tr>
+              </table>
+              <span class="total-price">Итого: 750 руб.</span>
+              <button class="button order-button">Оформить заказ</button>
+            </section>
           </li>
         </ul>
       </nav>
@@ -109,7 +136,6 @@
               <label class="catalog-label" for="price">Цена: <span class="js-low-price">100</span> руб.- <span class="js-high-price">500</span>
                 руб.</label>
               <span class="menu-selection-list">
-                <!-- <input multiple  type="range" id="price" name="price" min="0" max="700"> Раскоментить для сортировщика-->
                 <input type="range" id="price" name="price" min="0" max="700">
               </span>
             </li>
@@ -127,9 +153,11 @@
                 <label class="label-radio" for="up-thirty">выше 30%</label>
               </span>
             </li>
+          </ul>
+          <ul class="menu-selection">
             <li class="catalog-selection-list">
               <span class="catalog-label"> Наполнители:</span>
-              <span class="menu-selection-list">
+              <span class="menu-selection-list topping">
                 <input class="checkbox visually-hidden" type="checkbox" name="шоколадные" id="choco" checked>
                 <label for="choco">шоколадные</label>
                 <input class="checkbox visually-hidden" type="checkbox" name="сахарные присыпки" id="sugar" checked>
