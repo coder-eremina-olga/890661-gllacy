@@ -346,7 +346,7 @@ img {
   position: absolute;
   min-height: 244px;
   width: 540px;
-  border-radius: 20px;
+  border-radius: 3px;
   z-index: 5;
   right: 0px;
   font-size: 13px;
@@ -828,7 +828,7 @@ fieldset {
   border: #f6f8f7 2px solid;
   box-shadow: none;
   margin-left: 10px;
-  margin-top: 22px;
+  margin-top: 29px;
   vertical-align: top;
 }
 
@@ -1240,7 +1240,7 @@ input[type='range']::-webkit-slider-thumb:hover {
 }
 
 .catalog-item-price span {
-  font-size: 30px;
+  font-size: 45px;
   line-height: 45px;
   margin-left: 5px;
   padding: 0;
@@ -1467,16 +1467,11 @@ input[type='range']::-webkit-slider-thumb:hover {
 .button-subscription {
   font-size: 18px;
   line-height: 24px;
-
-  padding-top: 11px;
-  padding-left: 17px;
-  padding-bottom: 19px;
-  padding-right: 17px;
   margin-left: 12px;
-  margin-top: 0px;
-
-  height: 47px;
+  margin-top: 0;
+  height: 42px;
   width: 130px;
+  padding: 8px 17px 19px;
 }
 /*карта*/
 .map-wrapper {
